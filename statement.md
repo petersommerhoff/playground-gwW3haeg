@@ -1,25 +1,19 @@
-# Functional Programming in Kotlin
-
-This is a hands-on guide to Kotlin's main functional programming features:
-
-1. Higher-order functions
-1. Lambda expressions
-1. Lambdas with Receivers
-1. Lazy Evaluation
+# Breaking Kotlin
 
 
-## Functions in Kotlin
 
-Before talking about higher-order functions and lambdas, I want to first get everyone on the same page when it comes to first-order (normal) functions.
+## Breaking the Compiler
 
+As you know, you don't normally need to end all statements and expressions in Kotlin with semicolons. So the question is: how does Kotlin infer where a statement or expression ends? Let's try to trick the compiler:
 
-### Function Declaration
+### Causing a CompilationException (wrong code generated)
 
-In its most explicit form, a function declaration in Kotlin looks like this:
+Let's see what happens when we try to split up a simple calculation onto two lines:
 
 ```kotlin runnable
-fun modifyString(str: String): String {
-    return str.toUpperCase()
+fun test() {
+    return 2 + 
+        3
 }
 ```
 
