@@ -15,5 +15,9 @@ fun test(): Int {
     return 2 + 
         3
 }
+
+fun main() {
+    test()
+}
 ```
 
