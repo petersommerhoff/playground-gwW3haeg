@@ -12,12 +12,13 @@ Let's see what happens when we try to split up a simple calculation onto two lin
 
 ```kotlin runnable
 fun test(): Int {
-    return 2 + 
-        3
+    val a = 2 + 
+            3
+    return a
 }
 
 fun main(args: Array<String>) {
-    test()
+    println(test())
 }
 ```
 
