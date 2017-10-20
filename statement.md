@@ -11,14 +11,12 @@ As you know, you don't normally need to end all statements and expressions in Ko
 Let's see what happens when we try to split up a simple calculation onto two lines:
 
 ```kotlin runnable
-fun test(): Int {
-    val a = 2 + 
-            3
-    return a
-}
-
 fun main(args: Array<String>) {
-    println(test())
+    val a = 42
+    
+    when (a) {
+        in Math.abs(-1)..100 -> println("It's between 1 and 100")
+    }
 }
 ```
 
