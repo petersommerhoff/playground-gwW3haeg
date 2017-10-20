@@ -11,7 +11,7 @@ As you know, you don't normally need to end all statements and expressions in Ko
 Let's see what happens when we try to split up a simple calculation onto two lines:
 
 ```kotlin runnable
-fun test() {
+fun test(): Int {
     return 2 + 
         3
 }
