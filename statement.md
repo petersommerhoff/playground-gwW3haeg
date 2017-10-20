@@ -16,7 +16,7 @@ fun test(): Int {
         3
 }
 
-fun main() {
+fun main(args: Array<String>) {
     test()
 }
 ```
